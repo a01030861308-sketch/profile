@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoon Ui Yeol — Profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #f7f8fa; color: #1a1f28;
+  font-family: 'Noto Sans KR', sans-serif; font-weight: 300;
+  min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem;
+}
+.wrap { max-width: 520px; width: 100%; }
+.header { margin-bottom: 2.5rem; text-align: center; }
+.header-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: #4a7c6f; margin-bottom: 12px; }
+.header-name { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 600; color: #1a1f28; margin-bottom: 4px; }
+.header-name-en { font-family: 'DM Mono', monospace; font-size: 11px; color: #4a7c6f; letter-spacing: 2.5px; margin-bottom: 10px; }
+.header-sub { font-size: 13px; color: #9aa0ad; line-height: 1.7; }
+.divider { width: 40px; height: 2px; background: #4a7c6f; margin: 1.75rem auto; border-radius: 2px; }
+.card-list { display: flex; flex-direction: column; gap: 12px; }
+.card { background: #ffffff; border: 1px solid #e4e7ed; border-radius: 12px; padding: 1.4rem 1.5rem; display: flex; align-items: center; gap: 1.25rem; text-decoration: none; color: inherit; transition: border-color .2s, box-shadow .2s, transform .2s; }
+.card:hover { border-color: #8fbdb5; box-shadow: 0 6px 20px rgba(74,124,111,0.1); transform: translateY(-2px); }
+.card-icon { width: 44px; height: 44px; border-radius: 10px; background: #e8f0ee; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; transition: background .2s; }
+.card:hover .card-icon { background: #4a7c6f; }
+.card-body { flex: 1; }
+.card-title { font-size: 15px; font-weight: 500; color: #1a1f28; margin-bottom: 3px; }
+.card-desc { font-size: 12px; color: #9aa0ad; line-height: 1.5; }
+.card-arrow { font-size: 18px; color: #cdd2db; transition: color .2s, transform .2s; }
+.card:hover .card-arrow { color: #4a7c6f; transform: translateX(4px); }
+.footer { margin-top: 2.5rem; text-align: center; font-family: 'DM Mono', monospace; font-size: 10px; color: #cdd2db; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div class="header-label">Researcher · Cheongju University</div>
+    <div class="header-name">윤 의 열</div>
+    <div class="header-name-en">YOON UI YEOL</div>
+    <div class="header-sub">청주대학교 대학원 박사과정<br>보건의료학과 물리치료전공 · 연구원</div>
+  </div>
+  <div class="divider"></div>
+  <div class="card-list">
+    <a class="card" href="01_researcher_profile.html">
+      <div class="card-icon">👤</div>
+      <div class="card-body">
+        <div class="card-title">연구자 프로필</div>
+        <div class="card-desc">학력 · 경력 · 논문 · 참여과제 · 관심분야 · 연락처</div>
+      </div>
+      <div class="card-arrow">→</div>
+    </a>
+    <a class="card" href="02_research_project.html">
+      <div class="card-icon">🔬</div>
+      <div class="card-body">
+        <div class="card-title">연구 지원사업 소개</div>
+        <div class="card-desc">IMU 센서 기반 비보행 활동 에너지소비량 예측모델 · 2026–2027</div>
+      </div>
+      <div class="card-arrow">→</div>
+    </a>
+  </div>
+  <div class="footer">YOON UI YEOL · 2026 · yooni@cju.ac.kr</div>
+</div>
+</body>
+</html>
